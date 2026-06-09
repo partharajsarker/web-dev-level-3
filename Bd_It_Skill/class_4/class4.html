@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>class4</title>
   </head>
   <body>
     <form>
@@ -25,9 +25,39 @@
 
       <label for="date">Date:</label>
       <input type="date" id="date" name="date" /><br /><br />
-      <label for="name">Password:</label>
-      <input type="password" placeholder="Enter your password" /><br /><br />
+
+      <label for="car-brand">Favorite Car Brand:</label>
+      <select id="car-brand" name="car-brand">
+        <option value="toyota">Toyota</option>
+        <option value="honda">Honda</option>
+        <option value="ford">Ford</option>
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+      </select><br /><br />
+
+      <label for="volume">Volume:</label>
+      <input type="range" id="volume" name="volume" min="0" max="100" value="50" />
+      <span id="volume-value">50</span><br /><br />
+
+      <label>Gender:</label>
+      <input type="radio" id="gender-male" name="gender" value="male" />
+      <label for="gender-male">Male</label>
+      <input type="radio" id="gender-female" name="gender" value="female" />
+      <label for="gender-female">Female</label><br /><br />
+
+      <label>
+        <input type="checkbox" id="agree" name="agree" />
+        I agree to the terms </label
+      ><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"/><br /><br />
       <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
     </form>
   </body>
 </html>
